@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "title": "Jarron escultura",
+        "image": "/src/data/assets/florero-escultura.jpg",
+        "price": "25.000",
+        "category": "deco"
+    },
+    {
+        "id": 2,
+        "title": "Florero geometrico",
+        "image": "/src/data/assets/floreros-geometricos.jpg",
+        "price": "5.000",
+        "category": "deco"
+    },
+    {
+        "id": 3,
+        "title": "Frasco 'Hongos'",
+        "image": "/src/data/assets/frascos-hongo.jpg",
+        "price": "20.000",
+        "category": "deco"
+    },
+    {
+        "id": 4,
+        "title": "Frasco relieve",
+        "image": "/src/data/assets/frascos-relieve.jpg",
+        "price": "10.000",
+        "category": "deco"
+    },
+    {
+        "id": 5,
+        "title": "Porta sahumerio Luna",
+        "image": "/src/data/assets/portasahumerios-luna.jpg",
+        "price": "30.000",
+        "category": "deco"
+    },
+    {
+        "id": 6,
+        "title": "Porta vela marmol",
+        "image": "/src/data/assets/portavela-marmol.jpg",
+        "price": "3.500",
+        "category": "deco"
+    },
+    {
+        "id": 7,
+        "title": "Porta vela coral",
+        "image": "/src/data/assets/portavelas-coral.jpg",
+        "price": "8.300",
+        "category": "deco"
+    },
+    {
+        "id": 8,
+        "title": "Organizador joyas",
+        "image": "/src/data/assets/set-baño.jpg",
+        "price": "12.000",
+        "category": "deco"
+    },
+    {
+        "id": 9,
+        "title": "Jarra grande individual",
+        "image": "/src/data/assets/jarrones.jpg",
+        "price": "18.500",
+        "category": "vajillas"
+    },
+    {
+        "id": 10,
+        "title": "Set jarra + juego de vajilla",
+        "image": "/src/data/assets/set-vajillas2.jpg",
+        "price": "45.000",
+        "category": "vajillas"
+    },
+    {
+        "id": 11,
+        "title": "Taza Mug",
+        "image": "/src/data/assets/tazas.jpg",
+        "price": "8.000",
+        "category": "vajillas"
+    },
+    {
+        "id": 12,
+        "title": "Set cuencos 'Hojas'",
+        "image": "/src/data/assets/set-hojas.jpg",
+        "price": "14.000",
+        "category": "vajillas"
+    },
+    {
+        "id": 13,
+        "title": "Set desayuno",
+        "image": "/src/data/assets/set-te.jpg",
+        "price": "21.000",
+        "category": "vajillas"
+    },
+    {
+        "id": 14,
+        "title": "Set de te",
+        "image": "/src/data/assets/set-te-piedra.jpg",
+        "price": "16.000",
+        "category": "vajillas"
+    },
+    {
+        "id": 15,
+        "title": "Set vajillas con madera",
+        "image": "/src/data/assets/set-vajillas.jpg",
+        "price": "55.000",
+        "category": "vajillas"
+    },
+    {
+        "id": 16,
+        "title": "Cuencos snack",
+        "image": "/src/data/assets/set-cuencos.jpg",
+        "price": "23.000",
+        "category": "vajillas"
+    }
+]

@@ -1,0 +1,142 @@
+.navbar {
+    --bs-navbar-toggler-icon-bg: url(.\assets\burger-menu.png)!important;  
+}
+
+.navBar{
+    height:85px;
+    width: 95%;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 7px;
+}
+
+.imgLogo{
+    height: 50%;
+    transition: 1s ease;
+}
+
+.logo p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: var(--color-principal);
+    transition: 1s ease;
+}
+
+.navMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 75px;
+    height: 100%;
+    padding-right: 20px;
+}
+
+.navList{
+    justify-content: flex-end;
+    line-height: normal;
+}
+
+.nav-Item{
+    position: relative;
+}
+
+li.nav-item a {
+    color: var(--color-principal);
+    position: relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+a:after {    
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--color-principal);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after { 
+width: 100%; 
+left: 0; 
+}
+
+#link{
+    color: var(--color-principal);
+}
+
+.toggler{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar-toggler {
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none!important;
+}
+
+.cartWidgetContainer{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.imgNavBar {
+    height: 35%;
+    margin-bottom: 3px;
+}
+
+.countCart {
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    background-color: var(--color-enfasis);
+    border: 1px solid var(--color-enfasis);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: small;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
+}
+
+@media (max-width: 991px) {
+	.navList{
+        position: absolute;
+        top: 85px;
+        left: 5px;
+    }
+
+    li.nav-item a {
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+	.imgLogo{
+        height: 40%;
+    }
+
+    .logo p {
+        font-size: 1.3rem;
+    }
+}

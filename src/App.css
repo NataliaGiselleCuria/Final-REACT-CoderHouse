@@ -1,0 +1,31 @@
+:root{
+  --color-enfasis: #5d5d8d;
+  --color-texto: #645329;
+  --color-principal: #b9a997;
+  --color-fondo: #d8cec3;
+  --color-marcador: #a9a198;
+
+}
+
+p{
+  margin: 0!important;
+}
+
+h4 {
+  color: var(--color-principal)!important;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem!important;
+}
+
+.logo p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.itemList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: center;
+}
