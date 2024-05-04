@@ -3,6 +3,7 @@
     height: 320px!important;
     justify-self: center;
     margin-bottom: 40px;
+    border: none!important;
 }
 
 .card img {
@@ -99,6 +100,6 @@
 }
 
 .ver-mas:hover:after { 
-width: 100%; 
-left: 0; 
+    width: 100%; 
+    left: 0; 
 }

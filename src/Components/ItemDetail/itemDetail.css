@@ -10,7 +10,6 @@
 
 span.img-detail {
     text-align: right;
-    padding-right: 100px;
 }
 
 .itemDetail img {
@@ -19,8 +18,10 @@ span.img-detail {
 }
 
 .txt-detail {
-    height: 80%;
+    height: max-content;
     margin: auto;
+    padding: 50px;
+    box-shadow: 5px 5px 20px #a9a1982e;
 }
 
 .detail-title {

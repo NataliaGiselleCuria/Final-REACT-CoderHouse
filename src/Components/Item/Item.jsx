@@ -8,14 +8,6 @@ import { faEye } from '@fortawesome/free-regular-svg-icons';
 
 const Item = ({producto}) => {
 
-  // const verDesc = document.querySelectorAll('.hide-desc');
-  // verDesc.forEach(el => {
-  //   el.addEventListener('click', function (){
-
-  //   })
-    
-  // });
-
   return (
         <div className='card' key={producto.id}>
 

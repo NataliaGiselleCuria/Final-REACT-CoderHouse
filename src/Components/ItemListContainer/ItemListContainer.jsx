@@ -1,43 +1,56 @@
 import './ItemListContainer.css'
 import ItemList from '../ItemList/ItemList'
 import { useState, useEffect} from 'react';
-import pedirProductos from '../pedirProductos';
 import LiNavBar from '../LiNavBar/LiNavBar'
 import { useParams } from 'react-router-dom';
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import { db } from '../../firebase/config';
 
 export default function ItemListContainer(){
 
-    const catLi = document.querySelectorAll('.categorias .nav-item')
-
     const [productos, setProductos] = useState([]);
-    const {category} = useParams();
+    const { category} = useParams();
 
     useEffect(() => {
 
-        pedirProductos()
-            .then((res) => {
-                if(category){
-                    setProductos(res.filter((prod) => prod.category === category));
+        const productosRef = collection(db, "productos");
 
-                    catLi.forEach(cat => {
-                        if(category==cat.firstChild.id){
-                            cat.firstChild.classList.toggle('cat-active');
-                        }else{  
-                            cat.firstChild.classList.remove('cat-active');
+        const q = category ? query(productosRef, where("category", "==", category)) : productosRef;
+
+        getDocs(q)
+         .then((resp) =>{
+            let categoria = false;
+            setProductos(
+                
+                resp.docs.map((doc) => {
+                     
+                    while(!categoria){
+
+                        const catLi = document.querySelectorAll('.categorias .nav-item')
+
+                        if (category){   
+                            catLi.forEach(cat => {
+                                if(category==cat.firstChild.id){
+                                    cat.firstChild.classList.toggle('cat-active');
+                                }else{  
+                                    cat.firstChild.classList.remove('cat-active');
+                                }
+                            });
+        
+                        } else {
+    
+                            catLi[0].firstChild.classList.toggle('cat-active');
+                            catLi[1].firstChild.classList.remove('cat-active');
+                            catLi[2].firstChild.classList.remove('cat-active');
                         }
-                    });
-
-                } else {
-                    setProductos(res);
-   
-                    catLi[0].firstChild.classList.toggle('cat-active');
-                    catLi[1].firstChild.classList.remove('cat-active');
-                    catLi[2].firstChild.classList.remove('cat-active');
-                }    
-            })
-            .catch((error) => {
-                console.error(error)
-            })
+                        categoria = true;
+                    }
+                         
+                    return { ...doc.data(), id: doc.id }
+                })
+            )
+          
+        })
 
     },[category])
    

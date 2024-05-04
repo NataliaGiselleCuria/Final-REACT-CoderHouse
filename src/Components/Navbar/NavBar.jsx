@@ -1,6 +1,7 @@
 import LiNavBar from '../LiNavBar/LiNavBar'
 import Cart from '../CartWidget/Cart'
 import './NavBar.css';
+import { Link } from 'react-router-dom';
 
 export default function NavBar(){
     
@@ -19,13 +20,13 @@ export default function NavBar(){
                                 <LiNavBar id="link" texto="INICIO" path="/"/>
                                 <LiNavBar id="link" texto="PRODUCTOS" path="/productos"/>
                                 <LiNavBar id="link" texto="CLUB" path=""/>
-                                <LiNavBar id="link" texto="CONTACTO" path=""/>
+                                <LiNavBar id="link" texto="CONTACTO" path="/contacto"/>
                             </ul>
                         </div>
                         
-                    <div className="cartWidgetContainer">
+                    <Link className="cartWidgetContainer" to="/carrito">
                         <Cart/>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </nav>   

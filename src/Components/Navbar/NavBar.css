@@ -4,7 +4,7 @@
 
 .navBar{
     height:85px;
-    width: 95%;
+    width: 90%;
     font-family: 'Roboto', sans-serif !important;
 }
 
@@ -69,6 +69,7 @@ width: 100%;
 left: 0; 
 }
 
+
 #link{
     color: var(--color-principal);
 }
@@ -92,6 +93,10 @@ left: 0;
     display: flex;
     height: 100%;
     align-items: center;
+}
+
+.cartWidgetContainer:hover:after{
+    width: 0%;
 }
 
 .imgNavBar {
